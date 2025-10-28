@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | TravelBloom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* ===== Reset & Base Styling ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      color: white;
+      background-color: #001f1f;
+    }
+
+   /* ===== Navbar (links centered) ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 80px;
+  background-color: rgba(0, 47, 47, 0.9);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Logo stays on the left */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Nav links perfectly centered */
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 50px;
+}
+
+/* Link styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Sky blue base */
+.nav-links a:link,
+.nav-links a:visited {
+  color: #00bfa6;
+}
+
+/* Cyan hover + underline */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00ffff;
+  border-bottom: 2px solid #00ffff;
+  padding-bottom: 4px;
+}
+
+
+    /* ===== Background (Same as Home Page) ===== */
+    .about-container {
+      background-image: url('b.jpg'); /* ← same image as home */
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      padding: 160px 80px 100px;
+      position: relative;
+    }
+
+    /* Overlay */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.55);
+      padding: 60px;
+      border-radius: 10px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* ===== Titles ===== */
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 35px;
+    }
+
+    /* ===== Text ===== */
+    p {
+      line-height: 1;
+      font-size: 1rem;
+      color: #e0e0e0;
+      margin-bottom: 18px;
+    }
+
+    strong {
+      color: #00bfa6;
+    }
+
+    /* ===== Team Section ===== */
+    .team-section {
+      margin-top: 70px;
+    }
+
+    .team-cards {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+
+    .team-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 25px;
+      width: 280px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-10px);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .team-card i {
+      font-size: 2.2rem;
+      color: #00bfa6;
+      margin-bottom: 10px;
+    }
+
+    .team-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      color: #dcdcdc;
+    }
+
+    .role {
+      display: inline-block;
+      background-color: #243d7c;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 10px;
+    }
+
+    /* ===== Social Media Icons ===== */
+    .social-icons {
+      position: fixed;
+      top: 45%;
+      left: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      z-index: 50;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #00bfa6;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="TravelBloom Logo">
+      <span>TravelBloom</span>
+    </div>
+    <div class="nav-links">
+      <a href="travel_recommendation.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- ===== Social Icons ===== -->
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <!-- ===== About Section ===== -->
+  <div class="about-container">
+    <div class="overlay">
+      <h1>ABOUT US</h1>
+      <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers. Our mission is to <strong>provide the best experience</strong> for people traveling to different destinations around the world.</p>
+      <p>Feel free to explore our website to learn more about what we offer!</p>
+
+      <div class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-cards">
+          <div class="team-card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>John Doe</h3>
+            <p>John oversees growth, partnerships, and the long-term vision of TravelBloom.</p>
+            <span class="role">CEO</span>
+          </div>
+
+          <div class="team-card">
+            <i class="fa-solid fa-user"></i>
+            <h3>Celina Thomas</h3>
+            <p>Celina drives operational excellence and leads customer experience teams.</p>
+            <span class="role">Team Lead</span>
+          </div>
+
+          <div class="team-card">
+            <i class="fa-solid fa-user"></i>
+            <h3>Mike Tysen</h3>
+            <p>Mike manages logistics and ensures flawless travel service delivery.</p>
+            <span class="role">Delivery Head</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
